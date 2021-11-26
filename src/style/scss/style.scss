@@ -1,0 +1,71 @@
+body {
+    background: black;
+}
+
+.blurred-background {
+    background-image: url("../../assets/images/Springfield.jpeg");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    filter: blur(7px);
+}
+
+header {
+    background-image: url("../../assets/images/simpsons.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    width: 100vw;
+    height: 25vh;
+}
+
+blockquote,
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    padding: 0 7vw;
+}
+
+img {
+    height: 40vh;
+}
+.quote-generator {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 65vh;
+}
+
+.btn-and-img_ctnr {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20vw;
+}
+
+button {
+    width: 250px;
+    height: 250px;
+    margin: auto 0;
+    border-radius: 50%;
+    background: rgba($color: #888888, $alpha: 0.2);
+    border: solid 1px white;
+    color: white;
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 1.2em;
+    font-weight: 700;
+    outline: none;
+    &:hover {
+        transform: scale(1.3);
+    }
+}
+
